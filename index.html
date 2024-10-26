@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;0,700;1,300..900;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;0,700;1,300..900;1,700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">Grado Babo</div>
+            </nav>
+            <!-- End of desktop navigation menu -->
+             <div class="hero-section">
+                <div class="left">
+                    <h1>Grado Babo</h1>
+                    <h2>AN ITALIAN VEGAN RESTAURANT</h2>
+                    <p>
+                        Monday to Friday 5:00pm to 10pm <br />
+                        Sunday Closed <br />
+                        Handjerystraße 55, 12161 Berlin <br />
+                    </p>
+                    <a href="#" class="btn light">Call <b>+4917663341686</b> to <br /> book your table now!</a>
+                </div>
+
+                <div class="right">
+                    <img src="images/Hero Image.png" alt="">
+                </div>
+             </div>
+        </div>
+    </header>
+    <!-- End of Header Section -->
+     <section class="container">
+        <div class="testimonial-section">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>“Cute 100% vegan Italian restaurant with delicious homemade food. Staff is super nice and welcoming and the ambience is a mix of classical and relaxed Italian vibes. Food was definitely outstanding and for a fair price.”</p>
+                    <span class="author">Samuel Alamo</span>
+                </div>
+                <div class="testimonial">
+                    <p>“The best vegan pasta I’ve ever had! Great service and cozy environment. I highly recommend this place to anyone looking for authentic Italian vegan food.”</p>
+                    <span class="author">Maria Gonzalez</span>
+                </div>
+                <div class="testimonial">
+                    <p>“A hidden gem for vegan lovers. The atmosphere was beautiful and the dishes were creative, fresh, and absolutely delicious.”</p>
+                    <span class="author">John Doe</span>
+                </div>
+            </div>
+    
+            <div class="navigation">
+                <button class="nav-button prev" onclick="manualSlide(-1)">&#10094;</button>
+                <button class="nav-button next" onclick="manualSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    
+        <script>
+            let currentTestimonial = 0;
+            let totalTestimonials = document.getElementsByClassName('testimonial').length;
+            let slideInterval = setInterval(nextTestimonial, 5000); // Automatic slider every 5 seconds
+    
+            // Function to show testimonials with smooth sliding effect
+            function showTestimonial(n) {
+                const slider = document.querySelector('.testimonial-slider');
+                slider.style.transform = `translateX(-${n * 100}%)`;
+            }
+    
+            // Next testimonial function for auto slide
+            function nextTestimonial() {
+                currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+                showTestimonial(currentTestimonial);
+            }
+    
+            // Manual slide control
+            function manualSlide(n) {
+                clearInterval(slideInterval); // Stop auto-slide when manually operated
+                currentTestimonial = (currentTestimonial + n + totalTestimonials) % totalTestimonials;
+                showTestimonial(currentTestimonial);
+                slideInterval = setInterval(nextTestimonial, 5000); // Restart auto-slide after manual interaction
+            }
+    
+            // Initialize slider on load
+            document.addEventListener('DOMContentLoaded', function() {
+                showTestimonial(currentTestimonial);
+            });
+        </script>
+     </section>
+
+     <!-- Start of Our Services Section -->
+
+     <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <div class="icon-circle">
+                    <img src="icons/Catering.svg" alt="Catering">
+                </div>
+                <p>Catering</p>
+            </div>
+            <div class="service">
+                <div class="icon-circle">
+                    <img src="icons/Outside Seating.svg" alt="Outside Seating">
+                </div>
+                <p>Outside Seating</p>
+            </div>
+            <div class="service">
+                <div class="icon-circle">
+                    <img src="icons/Takeaway.svg" alt="Takeaway">
+                </div>
+                <p>Takeaway</p>
+            </div>
+            <div class="service">
+                <div class="icon-circle">
+                    <img src="icons/Pets Allowed.svg" alt="Pets Allowed">
+                </div>
+                <p>Pets Allowed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Our Services Section -->
+
+    <!-- Start of Our Gallery -->
+    <body>
+        <div class="image-gallery">
+            <div class="image-wrapper">
+                <div class="image-large">
+                    <img src="images/L1.png" alt="Image 1">
+                </div>
+                <div class="image-column">
+                    <div class="image-medium">
+                        <img src="images/R1.png" alt="Image 2">
+                    </div>
+                    <div class="image-medium">
+                        <img src="images/R2.png" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+            <div class="image-row">
+                <div class="image-small">
+                    <img src="images/M1.png" alt="Image 4">
+                </div>
+                <div class="image-small">
+                    <img src="images/M2.png" alt="Image 5">
+                </div>
+                <div class="image-small">
+                    <img src="images/M3.png" alt="Image 6">
+                </div>
+            </div>
+            <div class="image-row">
+                <div class="image-small">
+                    <img src="images/B1.png" alt="Image 7">
+                </div>
+                <div class="image-small">
+                    <img src="images/B2.png" alt="Image 8">
+                </div>
+            </div>
+        </div>
+    <!-- End of Our Gallery -->
+    
+<!-- Start of Available Payment Options -->
+<section class="payment-options">
+    <h2>Available payment options</h2>
+    <div class="options-container">
+        <div class="option">
+            <img src="icons/Amex.svg" alt="Amex">
+            <p>Amex</p>
+        </div>
+        <div class="option">
+            <img src="icons/Cash.svg" alt="Cash">
+            <p>Cash</p>
+        </div>
+        <div class="option">
+            <img src="icons/Contactless payment.svg" alt="Contactless Payment">
+            <p>Contactless <br /> Payment</p>
+        </div>
+        <div class="option">
+            <img src="icons/Mastercard.svg" alt="Mastercard">
+            <p>Mastercard</p>
+        </div>
+        <div class="option">
+            <img src="icons/VISA.svg" alt="VISA">
+            <p>VISA</p>
+        </div>
+        <div class="option">
+            <img src="icons/Debit.svg" alt="Debit Card">
+            <p>Debit Card</p>
+        </div>
+        <div class="option">
+            <img src="icons/Apple Pay.svg" alt="Apple Pay">
+            <p>Apple Pay</p>
+        </div>
+        <div class="option">
+            <img src="icons/Maestro.svg" alt="Maestro">
+            <p>Maestro</p>
+        </div>
+        <div class="option">
+            <img src="icons/EC.svg" alt="EC Card">
+            <p>EC Card</p>
+        </div>
+    </div>
+</section>
+<!-- End of Available Payment Options -->
+
+<!-- Start of Everything at a glance section -->
+<section class="contact-section">
+    <h2>Everything at a glance</h2>
+    <div class="contact-container">
+        <div class="contact-box">
+            <img src="icons/Location.svg" alt="Location Icon">
+            <p class="contact-title">Find Us</p>
+            <p>Handjerystraße 55, <br>12161 Berlin, Germany</p>
+        </div>
+        <div class="contact-box">
+            <img src="icons/Email.svg" alt="Email Icon">
+            <p class="contact-title">Email</p>
+            <p>gradobaboberlin@gmail.com</p>
+        </div>
+        <div class="contact-box">
+            <img src="icons/Contact.svg" alt="Phone Icon">
+            <p class="contact-title">Contact</p>
+            <p>+4917663341686</p>
+        </div>
+    </div>
+</section>
+<!-- End of Everything at a glance section -->
+    
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,685 @@
+:root {
+    --brand-color: #D03970;
+    --text-strong: #330C1A; 
+    --text-weak: #765B64; 
+    --stroke-strong: #91767F;
+    --stroke-weak: #E8D5DA;
+    --fill-1: #F7DDE3;
+    --fill-2: #FFF2F5; 
+}
+
+
+/* Start of Desktop Navigation Menu */
+/* Navigation bar styles */
+nav {
+    background-color: #F7DDE3 ; /* Light pink background */
+    height: 80px; /* Adjust as needed */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+  }
+  
+  /* Logo styling */
+  nav .logo {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px; /* Adjust font size */
+    color: #330C1A; /* Dark color for the text */
+    font-weight: 500 ; /* Makes the logo text bold */
+    letter-spacing: 2px; /* Adds some spacing between letters */
+    text-transform: uppercase;
+  }
+/* End of Desktop Navigation Menu */
+
+/* Start of Hero Section */
+/* Overall styling for the hero section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: -2px;
+    background-color: #FFF2F5; /* Light pink background */
+    height: 100vh; /* Full viewport height */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    max-width: 50%;
+    padding-left: 194px;
+    text-align: center; /* Ensure text is centered */
+    height: 100%; /* Make the left section take the full height */
+}
+
+.left h1 {
+    font-size: 40px;
+    font-family: "Playfair", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #330C1A; /* Darker color for the heading */
+}
+
+.left h2 {
+    font-size: 14px;
+    font-family: "Figtree", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #765B64; /* Darker color for the heading */
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #765B64 ;
+}
+
+.left .btn {
+    display: inline-block;
+    font-family: "Figtree", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent; /* Transparent background before hover */
+    color: #D03970;
+    padding: 10px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 0px;
+    border: 2px solid #D03970; /* Pink border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.left .btn:hover {
+    background-color: #D03970; /* Pink background on hover */
+    color: #fff; /* White text on hover */
+    border-color: #D03970;
+}
+
+.right img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+
+/* End of Hero Section */
+
+/* Start of Slider Section */
+.container {
+    height: 462px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfbfb;
+}
+
+.testimonial-section {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 104px;
+}
+
+h2 {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #330C1A;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.testimonial-slider {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%; /* 100% for each testimonial */
+}
+
+.testimonial {
+    min-width: 100%;
+    padding-left: 140px;
+    padding-right: 140px;
+    box-sizing: border-box;
+    color: #765B64;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.testimonial p {
+    font-family: "Playfair", serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.author {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #765B64;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.nav-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #765B64;
+    padding: 0 15px;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #D03970;
+}
+
+/* End of Slider Section */
+
+/* Start of Our Services Section */
+/* Section for Our Services */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #FFF2F5;
+}
+
+.services-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.services-section h2 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    color: #330C1A;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.service {
+    text-align: center;
+}
+
+.icon-circle {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px #E8D5DA; /* Add a slight shadow */
+}
+
+.icon-circle img {
+    width: 32%;
+    height: 32%;
+}
+
+.service p {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    color: #765B64;
+    letter-spacing: 1px;
+}
+/* End of our services section */
+
+/* Start of Our Gallery Section */
+
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: #fbfbfb;
+}
+
+.image-wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.image-large img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.image-medium img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 0;
+}
+
+.image-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.image-small img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.image-small,
+.image-medium {
+    flex: 1;
+}
+/* End of Our Gallery Section */
+
+/* Start of Available Payment Options */
+.payment-options {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fbfbfb;
+}
+
+.payment-options h2 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #330C1A;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.option {
+    text-align: center;
+}
+
+.option img {
+    width: 50px; /* Adjust the icon size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #765B64;
+}
+/* End of Available Payment Options */
+
+/* Start of Everything at a glance section */
+
+.contact-section {
+    text-align: center;
+    padding: 80px;
+}
+
+.contact-section h2 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #330C1A;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contact-box {
+    background-color: white;
+    padding: 40px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px #E8D5DA; /* Add a slight shadow */
+    border-radius: 0px;
+}
+
+.contact-box img {
+    width: 20px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.contact-title {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    color: #330C1A;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    color: #765B64;
+}
+
+/* End of everything at a glance section */
+
+
+
+/* Responsive Styles for Tablet and Mobile */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    
+    /* Navigation adjustments */
+    nav {
+        height: 70px;
+    }
+    nav .logo {
+        font-size: 16px; /* Adjust font size for readability on smaller screens */
+    }
+
+    /* Hero Section adjustments */
+    .hero-section {
+        flex-direction: column; /* Stack content vertically */
+        padding: 40px 20px; /* Add padding for spacing */
+        height: auto; /* Adjust height */
+        text-align: center; /* Center-align text for balance */
+    }
+    .left {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        max-width: 100%; /* Make it full-width */
+    }
+    .left h1 {
+        font-size: 32px; /* Decrease font size for tablet */
+    }
+    .left h2 {
+        font-size: 18px; /* Adjust subtitle size */
+    }
+    .right img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Testimonial Section adjustments */
+    .testimonial-section {
+        padding: 80px 20px;
+    }
+    .testimonial {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 20px;
+    }
+    .testimonial p {
+        line-height: 1.5;
+    }
+    .nav-button {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+
+    /* Our Services Section adjustments */
+    .services-container {
+        flex-direction: column;
+        align-items: center; /* Center-align each service item */
+        gap: 40px; /* Reduced gap for tablet */
+    }
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align each service box */
+        text-align: center;
+    }
+    .icon-circle {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center; /* Center the icon horizontally */
+        align-items: center; /* Center the icon vertically */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .service p {
+        font-size: 14px;
+    }
+
+    /* Gallery adjustments */
+    .image-gallery {
+        padding: 20px 0;
+    }
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Make images take full width */
+    }
+    
+    .image-large {
+        width: 100%; /* Make the large image full width */
+    }
+    
+    .image-large img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .image-column {
+        display: flex;
+        width: 100%;
+    }
+
+    .image-medium {
+        flex: 1; /* Divide the two medium images equally */
+        padding: 0;
+    }
+    
+    .image-medium img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    /* Remaining images will stack below in full width */
+    .image-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .image-small img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Payment Options adjustments */
+    .payment-options {
+        padding: 60px 20px; /* Increased padding for tablet */
+    }
+    .options-container {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .option img {
+        width: 40px; /* Reduced icon size */
+        height: auto;
+    }
+
+    /* Everything at a Glance Section adjustments */
+    .contact-section {
+        padding: 80px 20px; /* Increased padding for tablet */
+    }
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-box {
+        width: 100%;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+
+    /* Navigation adjustments */
+    nav {
+        height: 60px;
+    }
+    nav .logo {
+        font-size: 14px;
+    }
+
+    /* Hero Section adjustments */
+    .hero-section {
+        padding: 20px 10px;
+    }
+    .left h1 {
+        font-size: 24px;
+    }
+    .left h2 {
+        font-size: 14px;
+    }
+    .left p {
+        font-size: 14px;
+    }
+    .left .btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+    .right img {
+        margin-top: 20px;
+    }
+
+    /* Testimonial Section adjustments */
+    .testimonial-section {
+        padding: 40px 10px;
+    }
+    .testimonial {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .nav-button {
+        font-size: 1.25rem;
+        padding: 0 5px;
+    }
+
+    /* Our Services Section adjustments */
+    .services-container {
+        flex-direction: column;
+        align-items: center; /* Center-align each service item */
+        gap: 20px; /* Reduced gap for mobile */
+    }
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align each service box */
+        text-align: center;
+    }
+    .icon-circle {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center; /* Center the icon horizontally */
+        align-items: center; /* Center the icon vertically */
+    }
+    .service p {
+        font-size: 12px;
+    }
+
+    /* Gallery adjustments */
+    .image-gallery {
+        padding: 20px 10px;
+    }
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Make images take full width */
+    }
+    
+    .image-large {
+        width: 100%; /* Make the large image full width */
+    }
+    
+    .image-large img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .image-column {
+        display: flex;
+        width: 100%;
+    }
+
+    .image-medium {
+        flex: 1; /* Divide the two medium images equally */
+        padding: 0;
+    }
+    
+    .image-medium img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    /* Remaining images will stack below in full width */
+    .image-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .image-small img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Payment Options adjustments */
+    .payment-options {
+        padding: 40px 10px; /* Increased padding for mobile */
+    }
+    .options-container {
+        gap: 20px;
+    }
+    .option img {
+        width: 35px; /* Further reduced icon size for mobile */
+        height: auto;
+    }
+
+    /* Everything at a Glance Section adjustments */
+    .contact-section {
+        padding: 60px 10px; /* Increased padding for mobile */
+    }
+}
